@@ -1,5 +1,10 @@
-import Layout from "@/components/Layout";
+import Layout from '@/components/Layout';
+import Link from 'next/link';
 
 export default function Products() {
-  return <Layout>Products</Layout>;
+  return (
+    <Layout>
+      <Link href='/products/new' className='bg-gray-300 py-1 px-2 rounded-md'>Add new products</Link>
+    </Layout>
+  );
 }
