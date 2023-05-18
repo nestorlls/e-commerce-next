@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import './form.css';
+
+h1 {
+  @apply mb-2 text-xl text-cyan-900;
+}
+
+label {
+  @apply text-sm uppercase tracking-wider text-cyan-950;
+}
+
+input,
+textarea {
+  @apply rounded-lg border border-gray-300 p-1;
+}
+
+input:focus {
+  @apply border border-cyan-500;
+}
