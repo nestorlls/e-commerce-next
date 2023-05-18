@@ -1,4 +1,5 @@
 import Layout from '@/components/Layout';
+import axios from 'axios';
 import { useState } from 'react';
 
 export default function New() {
@@ -7,7 +8,7 @@ export default function New() {
     description: '',
     price: '',
   };
-  
+
   const [dataProduct, setDataProduct] = useState(initialValue);
 
   const handleChange = (e) => {
@@ -18,9 +19,9 @@ export default function New() {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log('hola', dataProduct);
+    await axios.post(`/api/products`, dataProduct);
   };
 
   return (
@@ -59,7 +60,7 @@ export default function New() {
             onChange={handleChange}
           />
         </div>
-        <button className='btn-primary' onSubmit={handleSubmit}>
+        <button className='btn-primary' type='submit' onSubmit={handleSubmit}>
           Save
         </button>
       </form>

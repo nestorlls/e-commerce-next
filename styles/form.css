@@ -2,7 +2,6 @@
   @apply mb-2 flex flex-col gap-1;
 }
 
-.btn-primary {
-  @apply bg-cyan-700 text-white px-4 py-1 rounded-md;
+button.btn-primary {
+  @apply rounded-md bg-cyan-700 px-4 py-1 text-white;
 }
-
