@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 @import './form.css';
+@import './table.css';
 
 h1 {
   @apply mb-2 text-xl text-cyan-900;

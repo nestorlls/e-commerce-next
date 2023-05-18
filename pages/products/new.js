@@ -1,5 +1,6 @@
 import Layout from '@/components/Layout';
 import axios from 'axios';
+import { useRouter } from 'next/router';
 import { useState } from 'react';
 
 export default function New() {
@@ -9,6 +10,7 @@ export default function New() {
     price: '',
   };
 
+  const router = useRouter();
   const [dataProduct, setDataProduct] = useState(initialValue);
 
   const handleChange = (e) => {
@@ -22,6 +24,7 @@ export default function New() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     await axios.post(`/api/products`, dataProduct);
+    router.push('/products');
   };
 
   return (

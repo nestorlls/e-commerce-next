@@ -1,0 +1,15 @@
+table.basic {
+  @apply mt-4 w-full;
+}
+
+table.basic thead {
+  @apply bg-gray-200;
+}
+
+table.basic tr td {
+  @apply border border-gray-300 p-1;
+}
+
+table.basic a {
+  @apply bg-cyan-600 text-white text-sm py-1 px-2 rounded-md inline-flex gap-1;
+}
