@@ -11,5 +11,6 @@ table.basic tr td {
 }
 
 table.basic a {
-  @apply bg-cyan-600 text-white text-sm py-1 px-2 rounded-md inline-flex gap-1;
+  @apply mr-2 inline-flex items-center gap-1 rounded-md;
+  @apply bg-cyan-600 px-2 py-1 text-sm text-white;
 }
