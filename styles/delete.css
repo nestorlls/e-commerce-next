@@ -1,0 +1,12 @@
+button.btn-red {
+  @apply bg-red-700;
+}
+
+button.btn-default {
+  @apply bg-cyan-600;
+}
+
+button.btn-red,
+button.btn-default {
+  @apply rounded-md px-4 py-1 text-white;
+}
